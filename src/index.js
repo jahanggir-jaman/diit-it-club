@@ -16,14 +16,22 @@ function App() {
     <Router>
       <React.Fragment>
         {/* NavBar */}
-        <MainNavBar />
-        {/*Left Side Bar */}
-        {/* <LeftSideBar /> */}
-        {/* Right Side NavBar */}
-        {/* <RightSideBar /> */}
-        <SplitPane left={<LeftSideBar />} right={<RightSideBar />} />
-        {/* Footer */}
-        <Footer />
+        <main className="main fullScreen">
+          <header className="header">
+            <MainNavBar />
+          </header>
+          {/*Left Side Bar */}
+          {/* <LeftSideBar /> */}
+          {/* Right Side NavBar */}
+          {/* <RightSideBar /> */}
+          <div className="middle">
+            <SplitPane left={<LeftSideBar />} right={<RightSideBar />} />
+          </div>
+          {/* Footer */}
+          <footer className="footer">
+            <Footer />
+          </footer>
+        </main>
       </React.Fragment>
     </Router>
   );

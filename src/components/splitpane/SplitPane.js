@@ -11,7 +11,9 @@ export default class SplitPane extends React.Component {
     return (
       <React.Fragment>
         <div className="SplitPane">
-          <div className="SplitPane-left">{this.props.left}</div>
+          <div className="SplitPane-left d-none d-md-block">
+            {this.props.left}
+          </div>
           <div className="SplitPane-right">{this.props.right}</div>
         </div>
       </React.Fragment>

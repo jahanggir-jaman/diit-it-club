@@ -46,7 +46,8 @@ export default class MainNavBar extends React.Component {
         <Navbar color="light" light expand="md">
           <RNavLink exact to="/" style={logoStyle} />
 
-          <MediaQuery query="(max-width: 800px)">
+          {/*Bootstrap tab breakdown pint is 768px*/}
+          <MediaQuery query="(max-width: 767px)">
             <NavbarToggler onClick={this.toggle} />
             <Collapse
               className="hidden-md-up"
