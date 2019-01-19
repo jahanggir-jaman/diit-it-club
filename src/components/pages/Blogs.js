@@ -1,7 +1,7 @@
 import React from "react";
 import MediaQuery from "react-responsive";
 
-export default class BLogs extends React.Component {
+export default class Blog extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -10,7 +10,7 @@ export default class BLogs extends React.Component {
     return (
       <React.Fragment>
         <div className="w-100  h-100">
-          <h1>BLogs</h1>
+          <h1>Blog</h1>
         </div>
       </React.Fragment>
     );
