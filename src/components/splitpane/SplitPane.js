@@ -10,11 +10,9 @@ export default class SplitPane extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="SplitPane">
-          <div className="SplitPane-left d-none d-md-block">
-            {this.props.left}
-          </div>
-          <div className="SplitPane-right">{this.props.right}</div>
+        <div className="h-100 w-100 d-flex">
+          <div className="flex-2 d-none d-md-block">{this.props.left}</div>
+          <div className="flex-8">{this.props.right}</div>
         </div>
       </React.Fragment>
     );

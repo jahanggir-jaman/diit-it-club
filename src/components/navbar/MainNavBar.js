@@ -56,24 +56,13 @@ export default class MainNavBar extends React.Component {
             >
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="/components/">Components</NavLink>
+                  <RNavLink to="/about">About</RNavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
-                    GitHub
-                  </NavLink>
+                  <RNavLink to="/events">Events</RNavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>Option 1</DropdownItem>
-                    <DropdownItem>Option 2</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Reset</DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                <RNavLink to="/blog">Blog</RNavLink>
+                <RNavLink to="/contact">Contact</RNavLink>
               </Nav>
             </Collapse>
           </MediaQuery>

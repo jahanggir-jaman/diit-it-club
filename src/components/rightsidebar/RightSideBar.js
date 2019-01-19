@@ -1,6 +1,6 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-
+import Content from "../content/Content";
 export default class RightSideBar extends React.Component {
   constructor(props) {
     super(props);
@@ -9,7 +9,7 @@ export default class RightSideBar extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Right</h1>
+        <Content />
       </React.Fragment>
     );
   }

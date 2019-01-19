@@ -9,7 +9,9 @@ export default class Footer extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <p className="text-center">&copy; Copyright {Date().split(" ")[3]}</p>
+        <p className="m-1 text-center">
+          &copy; Copyright {Date().split(" ")[3]}
+        </p>
       </React.Fragment>
     );
   }

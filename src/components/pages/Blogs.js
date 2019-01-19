@@ -1,8 +1,7 @@
 import React from "react";
-import LeftMenu from "../menu/LeftMenu";
 import MediaQuery from "react-responsive";
 
-export default class LeftSideBar extends React.Component {
+export default class BLogs extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -10,7 +9,9 @@ export default class LeftSideBar extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <LeftMenu />
+        <div className="w-100  h-100">
+          <h1>BLogs</h1>
+        </div>
       </React.Fragment>
     );
   }
